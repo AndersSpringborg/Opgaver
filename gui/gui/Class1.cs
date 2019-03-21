@@ -10,8 +10,8 @@ namespace gui
     {
         public Form1 ()
         {
-            
-    
+
+            InitializeComponent();
 
 
             //Her oprettes vores byer (Database)
@@ -61,6 +61,26 @@ namespace gui
         };
 
             e.Graphics.DrawLines(new Pen(Color.Red, 8), points);
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.ClientSize = new System.Drawing.Size(1120, 681);
+            this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Graphics grafik = new Graphics();
+
+
         }
     }
 }
