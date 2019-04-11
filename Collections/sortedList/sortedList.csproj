@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C81709FA-E485-460F-A7BD-238E8247098B}</ProjectGuid>
+    <ProjectGuid>{20B18154-501F-4AD6-A0A2-8DB59FCCCE0C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MinMax</RootNamespace>
-    <AssemblyName>MinMax</AssemblyName>
+    <RootNamespace>sortedList</RootNamespace>
+    <AssemblyName>sortedList</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HandyMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
