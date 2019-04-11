@@ -8,6 +8,6 @@ namespace DieExercise
 {
     interface IRandom
     {
-        int RandomNumber(int min, int max);
+
     }
 }
