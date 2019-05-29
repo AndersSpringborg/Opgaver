@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D8051BD9-B6C4-49DD-960C-0F871D77AC3D}</ProjectGuid>
+    <ProjectGuid>{954839C8-5593-4570-B934-60114D663A8A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DieExercise</RootNamespace>
-    <AssemblyName>DieExercise</AssemblyName>
+    <RootNamespace>Opgave_1</RootNamespace>
+    <AssemblyName>Opgave 1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Parser">
+      <HintPath>..\..\..\..\..\Desktop\opge\Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="Scanner">
+      <HintPath>..\..\..\..\..\Desktop\opge\Scanner.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,8 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Die.cs" />
-    <Compile Include="IRandom.cs" />
+    <Compile Include="PrintVisitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
